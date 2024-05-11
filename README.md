@@ -4,3 +4,5 @@
 **NIM**  : 1217050021  
 
 [Link Website](https://arifinsyairifudin787.github.io/UTS_Sismul-/)
+
+[Link Website](https://youtu.be/QrC4lhjL9cc?si=funwBTKj6XT3WDOt)
