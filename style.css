@@ -1,0 +1,128 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: azure;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px; /* Padding on the sides */
+  color: #0056b3;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.image-processing,
+.audio-processing {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.image-processing:hover,
+.audio-processing:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-processing h2,
+.audio-processing h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+canvas:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.upload-btn {
+  margin-top: 20px; 
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.controls label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.controls label span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+.controls input[type="range"],
+.controls input[type="number"] {
+  width: calc(100% - 100px);
+  margin-bottom: 10px;
+  align-self: flex-end;
+}
+
+.download-btn a,
+#compressAudio {
+  display: inline-block;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.download-btn a:hover,
+#compressAudio:hover {
+  background-color: #0056b3;
+}
+
+.audio-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.audio-container button:hover {
+  background-color: #218838;
+}

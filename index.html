@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image & Audio Processing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image & Audio Processing</h1> 
+
+        <!-- Container untuk image processing -->
+        <div class="image-processing container">
+            <h2>Image Processing</h2>
+            <div class="image-container">
+                <canvas id="imageCanvas"></canvas>
+            </div>
+
+            <div class="controls">
+                <input type="file" id="imageInput" accept="image/*">
+                <div class="image-options">
+                    <label for="imageWidth">Width:</label>
+                    <input type="range" id="imageWidth" min="0" max="1000" value="400">
+                    <input type="number" id="imageWidthValue" min="0" max="1000" value="400">
+                    <label for="imageHeight">Height:</label>
+                    <input type="range" id="imageHeight" min="0" max="1000" value="400">
+                    <input type="number" id="imageHeightValue" min="100" max="1000" value="400">
+                    <label for="imageBlur">Blur:</label>
+                    <input type="range" id="imageBlur" min="0" max="10" value="0">
+                    <input type="number" id="imageBlurValue" min="0" max="10" value="0">
+                    <label for="imageRotate">Rotate:</label>
+                    <input type="range" id="imageRotate" min="0" max="360" value="0">
+                    <input type="number" id="imageRotateValue" min="0" max="360" value="0">
+                    <div class="download-btn">
+                        <a id="downloadImage" download="processed-image.png">Download Image</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Container untuk audio processing -->
+        <div class="audio-processing container">
+            <h2>Audio Processing</h2>
+            <div class="audio-container">
+                <audio id="audioPlayer" controls></audio>
+                <input type="file" id="audioInput" accept="audio/*">
+                <div class="audio-container">
+                    <button id="compressAudio">Compress Audio</button>
+                    <button id="audioDownload">Download Audio</button>
+                  </div>
+                  
+            </div>
+        </div>        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
