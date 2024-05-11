@@ -1,3 +1,6 @@
-# UTS_Sismul
+# UTS PRAKTIKUM SISTEM MULTIMEDIA - B
 
-Website processing image and audio 
+**NAMA** : Arifin Nurmuhammad Syarifudin 
+**NIM**  : 1217050021  
+
+[Link Website](https://arifinsyairifudin787.github.io/UTS_Sismul-/)
